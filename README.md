@@ -69,3 +69,4 @@ To do the actual linting, run:
 ```
 > npm run lint
 ```      
+# ezmusic.github.io
