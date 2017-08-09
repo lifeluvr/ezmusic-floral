@@ -35,14 +35,17 @@ body {
 	}	
 	#title {
 		border: 0px;
+		border-radius: 6px;
 		background: rgba(0,0,0,0);
 		color:#FFF;	
+		padding-right: 4px;
+		padding-left: 4px;
 	}	
 	</style>
 </head>
 
 <body>
-	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"  id="onload">
+	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"  id="myModal">
 
     <div class="modal-dialog">
 
@@ -60,7 +63,7 @@ body {
 		<em>Thank You!</em></p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal" aria-hidden="true"> Close </button>
         </div>
       </div>
 
@@ -68,13 +71,13 @@ body {
 </div>
 	
 	
-	<div id="header"><button id="title" style="padding-right: 4px;padding-left: 4px;" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg" aria-hidden-"true"><b><em>EzMusic</em></b></button>   </div>
+	<div id="header"><button id="title" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg" aria-hidden-"true"><b><em>EzMusic</em></b></button>   </div>
 	 <p id="credit">Artwork Provided by: <b>Mrs. Bronwyn Wilson</b></p>
   <div id="app"></div>
 
 	<script>
 	    $(window).load(function(){
-                $('#onload').modal('show');
+                $('#myModal').modal('show');
             });
 	</script>
   <script type="text/javascript" src="./public/7febcca36d7e06875dc4.js"></script>
